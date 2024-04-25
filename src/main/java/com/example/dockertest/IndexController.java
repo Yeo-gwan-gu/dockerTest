@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/api")
 @RestController
-public class IndexControllerTest {
+public class IndexController {
 
-        @GetMapping("/index")
-        public ResponseEntity<String> index() {
-            return ResponseEntity.ok().body("hello");
-        }
+    @GetMapping("/index")
+    public ResponseEntity<String> index() {
+        return ResponseEntity.ok().body("hello");
+    }
 
     @GetMapping("/welcome")
     public ResponseEntity<String> welcome() {
